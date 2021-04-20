@@ -1,14 +1,19 @@
 const express = require('express');
 const router = express.Router();
 
-// --- Código sin modularizar controlador
+const productsController = require('../controllers/productsController');
 
-router.get('/', (req, res) => {                 //  ------   (*) Atendemos a '/products' + '/'      --> '/products/'
-    res.send('Productos');
-});
+router.get('/', productsController.list);
+router.get('/search', productsController.search);
 
-router.get('/:id', (req, res) => {              //  ------   (*) Atendemos a '/products' + '/:id'   --> '/products/:id'
-    res.send("Producto: " + req.params.id);
-});
+router.get('/create', productsController.create);
+router.post('/', productsController.store);
+
+router.get('/edit/:id', productsController.edit);
+router.put('/', productsController.update);
+
+router.get('/:id', productsController.detail);
+router.delete('/:id', productsController.destroy);
+
 
 module.exports = router;

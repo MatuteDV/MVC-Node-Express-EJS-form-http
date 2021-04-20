@@ -5,3 +5,5 @@ body {
 span {
     font-weight: bold;
 }
+
+.invisible { visibility: hidden; }

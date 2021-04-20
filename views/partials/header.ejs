@@ -3,14 +3,34 @@
     <nav>
         <ul>
             <li>
+                <a href="/">Inicio</a>
+            </li>
+            <li>
                 <p>
+                    <!-- Ruta estática -->
                     Para obtener listado de productos: <a href="/products">/products</a>
                 </p>
             </li>
             <li>
                 <p>
+                    <!-- Con un ancla dirigimos a una ruta especial que puede tener un ID para que se capture como parametro dinamicamente -->
                     Para obtener detalle de un producto: <a href="/products/12">/products/12</a>
                     <span>( /products/id )</span>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <span>Buscar por nombre</span>
+                    <!-- Lo que se envía desde un form method get, es una petición con query -->
+                    <form action="/products/search" method="">
+                        <input type="text" name="search" id="search" placeholder="Ej: Big">
+                        <input type="submit" value="Buscar">
+                    </form>
+                </p>
+            </li>
+            <li>
+                <p>
+                    <a href="/products/create">Crear nuevo producto</a>
                 </p>
             </li>
         </ul>

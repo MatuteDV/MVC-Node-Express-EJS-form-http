@@ -5,10 +5,18 @@
     <%- include('partials/header') %>
 
     <main>
-        <h1>Create</h1>
+        <h1>Crear nuevo producto</h1>
 
-        <form action="" method="POST">
+        <form action="/products" method="POST">
+            <label for="name">Nombre</label>
             <input type="text" name="name" id="name">
+            <br>
+            <label for="brand">Marca</label>
+            <input type="text" name="brand" id="brand">
+            <br>
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price">
+            <br>
             <input type="submit" value="Enviar">
         </form>
     </main>

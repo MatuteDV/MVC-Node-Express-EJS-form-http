@@ -12,6 +12,12 @@
             <br>
             <h4>Descripción: </h4>
             <p><%= product.description %></p>
+            <form action="/products/<%= product.id %>?_method=DELETE" method="post">
+                <input type="submit" value="Eliminar">
+            </form>
+            <form action="/products/edit/<%= product.id %>" method="get">
+                <input type="submit" value="Editar">
+            </form>
         </div>
     </main>
 </body>

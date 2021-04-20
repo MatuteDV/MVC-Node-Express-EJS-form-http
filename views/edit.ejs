@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<%- include('partials/head') %>
+<body>
+    <%- include('partials/header') %>
+
+    <main>
+        <h1>Editando producto <%= product.id %></h1>
+
+        <form action="/products?_method=PUT" method="POST">
+            <label for="id"></label>
+            <input class="invisible" type="number" name="id" id="id" value="<%= product.id %>">
+            <br>
+            <label for="name">Nombre</label>
+            <input type="text" name="name" id="name" value="<%= product.name %>">
+            <br>
+            <label for="brand">Marca</label>
+            <input type="text" name="brand" id="brand" value="<%= product.brand %>">
+            <br>
+            <label for="price">Precio</label>
+            <input type="number" name="price" id="price" value="<%= product.price %>">
+            <br>
+            <input type="submit" value="Enviar">
+        </form>
+    </main>
+</body>
+</html>
