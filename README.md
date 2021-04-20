@@ -17,8 +17,7 @@ npm i nodemon --save-dev
     "startDev": "nodemon app.js"
   },
 ~~~
-4. Vamos a necesitar ignorar la carpeta node_modules para que esta no se cargue al repositorio remoto en Github: Creamos un archivo **.gitignore** en el raíz del proyecto y dentro del archivo agregamos una línea con el nombre de la carpeta que queremos omitir, **node_modules**.
-5. Para levantar el servidor, en líneas de comando, iniciamos con ***npm run startdev***
+4. Para levantar el servidor, en líneas de comando, iniciamos con ***npm run startdev***
 ~~~
 npm run startdev
 ~~~
