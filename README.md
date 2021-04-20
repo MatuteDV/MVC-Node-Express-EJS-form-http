@@ -5,11 +5,11 @@
 ~~~
 npm i
 ~~~
-4. Instalamos nodemon con ***npm i nodemon --save-dev***
+2. Instalamos nodemon con ***npm i nodemon --save-dev***
 ~~~
 npm i nodemon --save-dev
 ~~~
-5. Abrimos el archivo *package.json*, en el raíz de nuestro proyecto, y agregamos al objeto JSON **"Scripts"** las propiedades: **"start": "node app.js"** y **"startdev": "nodemon app.js"**. Y nos quedará así: 
+3. Abrimos el archivo *package.json*, en el raíz de nuestro proyecto, y agregamos al objeto JSON **"Scripts"** las propiedades: **"start": "node app.js"** y **"startdev": "nodemon app.js"**. Y nos quedará así: 
 ~~~
 "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
@@ -17,8 +17,8 @@ npm i nodemon --save-dev
     "startDev": "nodemon app.js"
   },
 ~~~
-6. Vamos a necesitar ignorar la carpeta node_modules para que esta no se cargue al repositorio remoto en Github: Creamos un archivo **.gitignore** en el raíz del proyecto y dentro del archivo agregamos una línea con el nombre de la carpeta que queremos omitir, **node_modules**.
-7. Para levantar el servidor, en líneas de comando, iniciamos con ***npm run startdev***
+4. Vamos a necesitar ignorar la carpeta node_modules para que esta no se cargue al repositorio remoto en Github: Creamos un archivo **.gitignore** en el raíz del proyecto y dentro del archivo agregamos una línea con el nombre de la carpeta que queremos omitir, **node_modules**.
+5. Para levantar el servidor, en líneas de comando, iniciamos con ***npm run startdev***
 ~~~
 npm run startdev
 ~~~
