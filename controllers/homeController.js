@@ -7,7 +7,7 @@ module.exports = {
         let inSale = [];
         let visited = [];
 
-        // Con el siguiente código, se filtran los productos por categoria. Con límite de max 5 por categoría.
+        // Con el siguiente código, se filtran los productos por state. Con límite de max 5 por categoría.
 
         products.forEach((element, i) => {
             if ( element.state === 'in-sale') {
@@ -21,7 +21,7 @@ module.exports = {
             }
         });
 
-        // Con el siguiente código, se filtran los productos por categoria. Sin límite
+        // Con el siguiente código, se filtran los productos por state. Sin límite
 
         // products.forEach(element => {
         //     if ( element.state === 'in-sale') {
